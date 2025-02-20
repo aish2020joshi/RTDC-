@@ -1,0 +1,16 @@
+.learn-more-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .learn-more-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .learn-more-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  

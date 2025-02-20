@@ -1,0 +1,78 @@
+/* General styles for the administration section */
+.administration-section {
+    padding: 20px;
+    font-family: 'Times New Roman', Times;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: justify;
+    background-color: #B89578;
+}
+
+/* Section titles */
+.administration-section h2, 
+.administration-section h3 {
+    color: #1abc9c; /* Primary color for headings */
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times;
+    font-size: x-large;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table th {
+    background-color: #1abc9c;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for alternate rows */
+}
+
+table tr:hover {
+    background-color: #ddd; /* Slight highlight on hover */
+}
+
+/* Administrator details section */
+.administrator-details {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Fee structure section */
+.fee-structure {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .administration-section {
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

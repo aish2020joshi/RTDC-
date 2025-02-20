@@ -1,0 +1,213 @@
+/* Base styles */
+.driving-track-page {
+  padding: 20px;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.8));
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap; /* Allows children to wrap if needed */
+  justify-content: center; /* Centers content horizontally */
+}
+
+/* Style for each section */
+.driving-skill-section {
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', Times;
+  text-align: justify; /* Justifies all text */
+  color: black; /* Ensures all text is black */
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Adjusted width for flex layout */
+  min-width: 300px; /* Ensures sections don't become too small on smaller screens */
+
+  /* Animation styles */
+  opacity: 0; /* Initial state */
+  transform: translateY(20px); /* Initial state */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+}
+
+.driving-skill-section.active {
+  opacity: 1; /* Final state */
+  transform: translateY(0); /* Final state */
+}
+
+/* Keyframes for additional animation effect */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Apply fade-in-out animation */
+.driving-skill-section.cycled {
+  animation: fadeInOut 5s ease-in-out forwards;
+}
+
+/* Animation styles */
+.driving-skill-section.animated {
+  opacity: 0; /* Initial state */
+  transform: translateY(20px); /* Initial state */
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title styling */
+.driving-skill-section h2 {
+  font-size: 30px;
+  color: black; /* Ensures heading text is black */
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center; /* Centers the heading */
+}
+
+/* Paragraph styling */
+.driving-skill-section p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: black; /* Ensures paragraph text is black */
+  text-align: justify; /* Justifies paragraph text */
+  margin-top: 10px;
+}
+
+/* Image styling */
+.driving-skill-image {
+  display: block; /* Makes the image a block element */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .driving-skill-section {
+    padding: 15px;
+    width: 100%; /* Makes sections take full width on smaller screens */
+  }
+
+  .driving-skill-section h2 {
+    font-size: 22px;
+  }
+
+  .driving-skill-section p {
+    font-size: 16px;
+  }
+
+  .driving-skill-image {
+    width: 90%;
+  }
+}
+
+/* Style for the about-tracks section */
+.about-tracks {
+  padding: 10px;
+  font-family: 'Times New Roman', Times;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 2s ease-in-out;
+}
+
+.about-tracks.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Heading styles for the tracks section */
+.about-tracks h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #202020;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times;
+}
+
+/* Table styling */
+.tracks-table {
+  width: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tracks-table th, .tracks-table td {
+  font-family: 'Times New Roman', Times;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  color: #333;
+}
+
+.tracks-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.tracks-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tracks-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Paragraph styling for the total track length */
+.about-tracks p {
+  font-family: 'Times New Roman', Times;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-tracks {
+    padding: 15px;
+  }
+
+  .about-tracks h1 {
+    font-size: 24px;
+  }
+
+  .tracks-table th, .tracks-table td {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .about-tracks p {
+    font-size: 18px;
+  }
+}

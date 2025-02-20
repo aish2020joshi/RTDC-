@@ -1,0 +1,101 @@
+.government-approved-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: 'Times New Roman', Times;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.government-approved-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+.government-approved-content {
+  font-size: 3rem;
+  color: #495057;
+  margin-bottom: 30px;
+  /* white-space: pre-line; Preserve line breaks in the content */
+  opacity: 1;
+  visibility: visible;
+}
+
+.government-approved-content {
+  font-size: 18px; /* Increase the font size as needed */
+  line-height: 1.6; /* Improve readability with line height */
+  color: #333; /* Optional: Adjust color for better contrast */
+  margin-bottom: 20px; /* Add some spacing below the content */
+}
+
+.government-approved-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.government-approved-image-wrapper {
+  max-width: 300px;
+  width: 100%; /* Ensure the image wrapper takes full width for smaller screens */
+}
+
+.government-approved-image {
+  width: 150%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  display: block;
+  margin: 20px auto; 
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+  .government-approved-gallery {
+    gap: 5px; /* Further reduce the gap on smaller screens */
+  }
+
+  .government-approved-image-wrapper {
+    max-width: 100%; /* Ensure images take full width on mobile */
+  }
+
+  .government-approved-title {
+    font-size: 1.5rem; /* Smaller font size on mobile */
+  }
+
+  .government-approved-content {
+    font-size: 0.9rem; /* Smaller font size on mobile */
+  }
+
+  .back-button {
+    width: 100%; /* Make the back button span the full width on mobile */
+    padding: 12px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .government-approved-title {
+    font-size: 1.3rem; /* Further reduce font size for very small screens */
+  }
+
+  .government-approved-content {
+    font-size: 0.85rem; /* Adjust content font size */
+  }
+}

@@ -1,0 +1,312 @@
+.about-container {
+  padding: 20px;
+  font-family: 'Times New Roman', Times;
+  font-size: 30px;
+  background-color: #B89578;
+}
+/* Styling for each section */
+section {
+  margin-bottom: 30px;
+}
+
+h2, h3, h4 {
+  color: black; /* Set all headings to black */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+p, ul {
+  color: black; /* Set all paragraphs and list items to black */
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify; /* Justify text for better readability */
+}
+
+/* Apply visibility effect when sections are in view */
+section.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+section {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Styling for InfoCards */
+.about-intro,
+.about-vision,
+.about-mission,
+.about-objectives,
+.about-facilities,
+.about-benefits,
+.about-organization,
+.about-collaboration {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-intro h2,
+.about-vision h3,
+.about-mission h3,
+.about-objectives h3,
+.about-facilities h3,
+.about-benefits h3,
+.about-organization h3,
+.about-collaboration h3 {
+  font-size: 28px;
+  color: black; /* Set all sub-headings to black */
+  margin-bottom: 10px;
+}
+
+.about-vision p,
+.about-mission ul,
+.about-objectives ul,
+.about-benefits ul,
+.about-organization p,
+.about-collaboration p {
+  font-size: 18px;
+  color: black; /* Set all paragraph text to black */
+  margin-bottom: 20px;
+}
+
+/* Facilities section */
+.about-facilities .facilities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.facility-item {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.facility-item h4 {
+  font-size: 22px;
+  color: black; /* Set the heading color of facility items to black */
+  margin-bottom: 15px;
+}
+
+.facility-item p {
+  font-size: 20px;
+  color: black; /* Set the paragraph color of facility items to black */
+  margin-bottom: 20px;
+}
+
+/* Horizontal layout for Vision, Organization, and Collaboration sections */
+.horizontal-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.horizontal-sections section {
+  flex: 1;
+  padding: 10px;
+  background: #ebe5e5;
+  border-radius: 8px;
+}
+
+.horizontal-sections section h3 {
+  font-size: 1.5rem;
+}
+
+/* Carousel section */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Hover effect on images */
+.facility-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .facilities-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .facility-item {
+    flex: 1 1 auto;
+  }
+
+  .tracks-table th,
+  .tracks-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-button {
+    font-size: 1.2em;
+    padding: 0.4em;
+  }
+
+  .facility-item h4 {
+    font-size: 16px;
+  }
+
+  .facility-item p {
+    font-size: 14px;
+  }
+}
+
+
+/* Style for the Training Partners Section */
+.training-partners-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* Heading Styling */
+.training-partners-section h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Paragraph Styling */
+.training-partners-section p {
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Partner Logos Container */
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* Individual Partner Logo */
+.partner-logo {
+  max-width: 250px;
+  max-height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1); /* Enlarge logo on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .training-partners-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .training-partners-section p {
+    font-size: 1.4rem;
+  }
+
+  .partner-logos {
+    gap: 40px;
+  }
+
+  .partner-logo {
+    max-width: 200px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-partners-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .training-partners-section p {
+    font-size: 1.2rem;
+  }
+
+  .partner-logos {
+    gap: 20px;
+  }
+
+  .partner-logo {
+    max-width: 150px;
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .training-partners-section {
+    padding: 20px 10px;
+  }
+
+  .training-partners-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .training-partners-section p {
+    font-size: 1rem;
+  }
+
+  .partner-logos {
+    gap: 10px;
+  }
+
+  .partner-logo {
+    max-width: 120px;
+    max-height: 100px;
+  }
+}
+

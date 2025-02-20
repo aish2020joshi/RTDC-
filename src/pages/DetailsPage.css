@@ -1,0 +1,157 @@
+/* General Styles for the Details Page */
+.details-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details-content {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.details-content p {
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.details-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.details-image:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .details-title {
+    font-size: 3rem;
+  }
+
+  .details-content {
+    font-size: 1.2rem;
+  }
+
+  .image-gallery {
+    justify-content: space-between;
+  }
+
+  .details-image {
+    width: 48%;
+  }
+}
+
+@media (max-width: 767px) {
+  .details-title {
+    font-size: 2rem;
+  }
+
+  .details-content {
+    font-size: 1rem;
+  }
+
+  .details-image {
+    width: 100%;
+  }
+}
+
+/* Additional Classes */
+.details-page-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.details-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.details-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+  text-align: left;
+}
+
+.details-image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.details-image-wrapper {
+  flex: 1 1 calc(33.333% - 30px);
+  max-width: calc(33.333% - 30px);
+}
+
+.details-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.details-image:hover {
+  transform: scale(1.05);
+}
+
+.error-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error-container h2 {
+  font-size: 2rem;
+  color: red;
+}
+
+.error-container p {
+  font-size: 1.2rem;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

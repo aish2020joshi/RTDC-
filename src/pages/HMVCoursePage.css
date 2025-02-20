@@ -1,0 +1,115 @@
+.hmv-course-page {
+    font-family: 'Times New Roman', Times;
+    text-align: justify;
+    margin: 10px auto;
+    padding: 20px;
+    max-width: auto;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.hmv-course-page h1 {
+    color: #090909;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.hmv-course-page h2,
+.hmv-course-page h3 {
+    color: #131313;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.hmv-course-page ul {
+    list-style-type: square;
+    margin-left: 20px;
+    font-size: 120%;
+}
+
+.hmv-course-page p {
+    color: #070707;
+    margin-bottom: 20px;
+    font-size: 120%;
+}
+
+/* Go Back Button Styling */
+.hmv-course-page .go-back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hmv-course-page .go-back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .hmv-course-page {
+        padding: 15px;
+        margin: 10px;
+        max-width: 100%; /* Use full width on small screens */
+        border-radius: 6px; /* Adjust border radius for smaller screens */
+    }
+
+    .hmv-course-page h1 {
+        font-size: 1.8rem; /* Reduce font size for h1 */
+    }
+
+    .hmv-course-page h2,
+    .hmv-course-page h3 {
+        font-size: 1.2rem; /* Adjust font size for subheadings */
+        margin-top: 15px;
+    }
+
+    .hmv-course-page p {
+        font-size: 0.95rem; /* Slightly reduce paragraph font size */
+        margin-bottom: 15px;
+    }
+
+    .hmv-course-page ul {
+        margin-left: 15px; /* Reduce left margin for lists */
+    }
+
+    .hmv-course-page .go-back-button {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .hmv-course-page {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 4px;
+    }
+
+    .hmv-course-page h1 {
+        font-size: 1.5rem;
+    }
+
+    .hmv-course-page p {
+        font-size: 0.9rem;
+    }
+
+    .hmv-course-page .go-back-button {
+        font-size: 0.85rem; 
+        padding: 6px 12px; 
+    }
+}

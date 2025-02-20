@@ -1,0 +1,619 @@
+.homepage-container {
+  background-image: url('https://th.bing.com/th/id/R.71e765dbd6e4dde9849c096802f831d0?rik=GlH7YCQvfDcIng&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f256862-car-landscape-vehicle-road.jpg&ehk=kew2Uuq2uK9%2fkvB7SWYZabrBY3m4Y4%2bvPBQMvOXhKws%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  /* Ensure the image covers the entire section */
+  background-position: center;
+  /* Center the image */
+  background-attachment: fixed;
+  /* Fix the background while scrolling */
+  font-family: 'Times New Roman', Times;
+  padding: 2%;
+  box-sizing: border-box;
+  text-align: justify;
+  background-color: #e0e0e0; 
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.hero-title {
+  font-size: 40px;
+  margin: 0;
+  color: #0f0f0f;
+  text-align: center;
+
+}
+
+.hero-description {
+  font-size: 20px;
+  margin: 20px 0 0;
+  color: #0c0c0c;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.features-section {
+  padding: 50px 30px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin-top: 2%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.features-section, .hero-section {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  opacity: 1;
+  visibility: visible;
+  /* visibility: visible; */
+}
+
+.feature-card {
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+.feature-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #555;
+}
+.sliding-text-container {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%; /* Adjust width as needed */
+}
+
+.sliding-text {
+  display: inline-block;
+  animation: slide-left 20s linear infinite;
+  font-size: 21px;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.about-section {
+  padding: 40px 20px;
+  background-color: #f7f4f4;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cta-section {
+  font-family: 'Times New Roman', Times;
+  background-color: #efbe73;
+  color: rgb(19, 19, 19);
+  padding: 40px 20px;
+  text-align: center;
+  margin: 0%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #fba21c;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #cc7a00;
+}
+
+.carousel {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  max-height: 889px;
+
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.hero-section {
+  margin: 1px;
+  padding: 0;
+}
+
+/* Added CSS for centering "Explore Our Courses" */
+
+.courses-section{
+  opacity: 1;
+  visibility: visible;
+  background-color: #e0e0e0;
+  padding: 0.3%;
+  margin: 1%;
+}
+
+.courses-header {
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times;
+  display: flex;
+  font-size: 180%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.features-section h2 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center; /* Center the heading */
+  color: #333; /* Choose a color that matches your theme */
+  margin-bottom: 20px; /* Add space below the heading */
+  position: relative; /* For adding decorative elements */
+}
+
+.features-section h2::after {
+  content: "";
+  display: block;
+  width: 60px; /* Adjust length */
+  height: 4px; /* Adjust thickness */
+  background-color: #007bff; /* Accent color for underline */
+  margin: 8px auto 0; /* Center the underline */
+}
+
+/* 
+.features-section h2{
+  text-align: center;
+  font-size: 200%;
+} */
+/* Horizontal Layout */
+.horizontal-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 20px 0;
+  gap: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Horizontal Section */
+.horizontal-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 33%;
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* This centers the content inside each section */
+  font-family: 'Times New Roman', Times;
+}
+
+/* Centering the h2 headings */
+.horizontal-section h2 {
+  text-align: center; /* Ensures heading is centered */
+  margin-bottom: 15px;
+  font-size: 1.8rem; /* Adjust the font size as needed */
+  font-weight: 600;
+  color: #111111; /* Adjust color as needed */
+}
+
+/* Styling for paragraphs */
+.horizontal-section p {
+  font-size: 1rem;
+  color: #060606;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Buttons Styling */
+.cta-button,
+.new-tab-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.new-tab-button:hover {
+  background-color: #0056b3;
+}
+
+/* Benefits List */
+.benefits-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  text-align: left;
+  color: #0e0d0d;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .horizontal-layout {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .horizontal-section {
+    max-width: 100%;
+  }
+}
+
+
+.courses-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.courses-description {
+  font-size: 1.2rem;
+  color: #0b0b0b;
+  font-family: 'Times New Roman', Times;
+  margin-bottom: 30px;
+  /* text-align: justify; */
+}
+
+.courses-header, .why-choose-us-content {
+  word-wrap: break-word;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.why-choose-us-container {
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  font-family: 'Times New Roman', Times;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  color: #000;
+  position: relative;
+  z-index: 10;
+}
+
+.why-choose-us-description {
+  font-size: 20px;
+  color: #000; 
+  text-align: center;
+  padding: 10px;
+}
+.why-choose-us-content p{
+  font-size: 18px;
+}
+
+.why-choose-us-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-us-image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 8px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  /* Optional: to give a rounded effect to the image */
+  transition: transform 5s ease-in-out, box-shadow 0.3s ease;
+  /* Smooth transition for transform and shadow */
+  animation: growAndTurn 5s ease-out;
+  /* Apply grow and turn animation */
+  opacity: 1;
+}
+
+/* Grow and Turn Effect on Image */
+@keyframes growAndTurn {
+  0% {
+    transform: scale(0.8) rotate(-20deg);
+    /* Start smaller and rotated */
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    /* Scale up and rotate to normal */
+    opacity: 1;
+  }
+}
+
+.why-choose-us-image img:hover {
+  transform: scale(1.05) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.why-choose-us-content {
+  flex: 2;
+  font-size: 1.1rem;
+  color: #281f1f;
+  line-height: 1.1;
+  font-family: 'Times New Roman', Times;
+  /* opacity: 1; */
+  /* Start as invisible */
+  animation: flyIn 5s forwards ease-out;
+  /* Apply faster fly-in animation */
+  animation-delay: 0.3s;
+  /* Slightly shorter delay */
+  opacity: 1;
+  text-align: justify;
+  max-width: 700px;
+  margin: auto;
+}
+
+.why-choose-us-content p {
+  margin-bottom: 15px;
+}
+
+.why-choose-us-content p strong {
+  font-weight: 600;
+}
+
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media (max-width: 768px) {
+  .why-choose-us-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .why-choose-us-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .why-choose-us-content {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-choose-us-container {
+    padding: 10px;
+  }
+
+  .why-choose-us-description {
+    font-size: 14px;
+  }
+}
+
+
+/* Style for the video container */
+.video-container {
+  position: relative; /* Ensures proper positioning for content inside */
+  overflow: hidden; /* Hides any overflow content */
+  width: 100%; /* Ensures the container spans the full width of its parent */
+  max-width: 1200px; /* Limits the container width for better readability */
+  margin: 20px auto; /* Centers the container with vertical spacing */
+  padding: 10px; /* Adds padding for aesthetic spacing */
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Elegant gradient background */
+  border-radius: 10px; /* Rounds the container's corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+}
+
+/* Style for the video element */
+.homepage-video {
+  display: block; /* Treats the video as a block-level element */
+  width: 100%; /* Makes the video responsive to the container's width */
+  height: auto; /* Maintains the video's aspect ratio */
+  border-radius: 8px; /* Rounds the video's corners slightly */
+  outline: none; /* Removes the focus outline */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a polished look */
+}
+
+/* Add hover effect for the video */
+.homepage-video:hover {
+  transform: scale(1.02); /* Slightly enlarges the video on hover */
+  transition: transform 0.3s ease-in-out; /* Smooth animation for the hover effect */
+}
+
+/* Style for devices with smaller screens */
+@media (max-width: 768px) {
+  .video-container {
+    padding: 5px; /* Reduce padding for smaller screens */
+    margin: 10px auto; /* Adjust margin for smaller screens */
+  }
+
+  .homepage-video {
+    border-radius: 5px; /* Reduce border-radius on smaller devices */
+  }
+}
+
+/* Style for the Training Partners Section */
+.training-partners-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* margin: 20px 0; */
+}
+
+/* Heading Styling */
+.training-partners-section h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Paragraph Styling */
+.training-partners-section p {
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Partner Logos Container */
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* Individual Partner Logo */
+.partner-logo {
+  max-width: 250px;
+  max-height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1); /* Enlarge logo on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .training-partners-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .training-partners-section p {
+    font-size: 1.4rem;
+  }
+
+  .partner-logos {
+    gap: 40px;
+  }
+
+  .partner-logo {
+    max-width: 200px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-partners-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .training-partners-section p {
+    font-size: 1.2rem;
+  }
+
+  .partner-logos {
+    gap: 20px;
+  }
+
+  .partner-logo {
+    max-width: 150px;
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .training-partners-section {
+    padding: 20px 10px;
+  }
+
+  .training-partners-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .training-partners-section p {
+    font-size: 1rem;
+  }
+
+  .partner-logos {
+    gap: 10px;
+  }
+
+  .partner-logo {
+    max-width: 120px;
+    max-height: 100px;
+  }
+}
